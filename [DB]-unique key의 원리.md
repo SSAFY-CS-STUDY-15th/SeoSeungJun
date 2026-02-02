@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (DB) RDB unique 어떻게 동작하는가
+title: (DB)-unique key의 원리
 date: 2026-01-26 24:00
 category: [Database]
 author: greensnapback0229
