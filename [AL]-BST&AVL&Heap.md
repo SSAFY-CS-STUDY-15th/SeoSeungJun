@@ -1,10 +1,8 @@
 
 
-BST 
-
-
-
 ## Binary Search Tree
+
+**이진트리**는 각 노드가 최대 2개의 자식만 가지는 트리로 값의 크기 순서가 보장되지 않을 수도 있습니다.
 
 ### 조회 
 
@@ -149,6 +147,10 @@ public static int findMin(Node cur) {
 
 모든 노드에 대해서 왼쪽 서브트리의 높이와 오른쪽 서브트리의 높이의 차가 1이 넘지 않는 이진트리 
 
+BST 규칙을 지키면서 추가로 균형 조건을 가집니다.
+
+
+
 ![img](https://velog.velcdn.com/images/eunaahn/post/e8a59f12-a3cc-4aa4-8611-b113bf2ae646/image.png)
 
 
@@ -264,7 +266,10 @@ return leftRotate(cur);
 ```java
 cur.left = leftRotate(cur.left);
 return rightRotate(cur);
+
 ```
+
+![img](https://blog.kakaocdn.net/dna/sDDvp/btrxHWMywkn/AAAAAAAAAAAAAAAAAAAAAOaMqlZ5HpawLuBYpFfYDc-1obfYTN-CJpazqvs2sux5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1780239599&allow_ip=&allow_referer=&signature=m7X07Zg6cwyv25hcpcmadNdTpPU%3D)
 
 ------
 
@@ -303,6 +308,8 @@ return rightRotate(cur);
 cur.right = rightRotate(cur.right);
 return leftRotate(cur);
 ```
+
+![img](https://blog.kakaocdn.net/dna/SbRZD/btrxD3Sjoj1/AAAAAAAAAAAAAAAAAAAAAMjzVDYPPnOXpWSEpgIA1IetRJleaUv3_pwRV-FXKGVI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1780239599&allow_ip=&allow_referer=&signature=xwZ89e1rwyF1HJBuAe9yZuPNews%3D)
 
 
 
@@ -529,4 +536,12 @@ public static Node remove(Node cur, int data) {
       return cur;
 }
 ```
+
+
+
+
+
+## Heap
+
+**Heap**은 우선순위 큐를 만들기 위한 완전 이진트리입니다.
 
